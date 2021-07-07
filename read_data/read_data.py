@@ -74,6 +74,7 @@ ser = serial.Serial('/dev/ttyACM0', 115200)
 
 if __name__ == '__main__':
     # cur, conn = connect()
+    print("[ START ]")
     while True:
         linia = ser.readline().decode('utf-8')
         if linia != '':
