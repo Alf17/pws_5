@@ -1,7 +1,7 @@
 from datetime import datetime
-import psycopg2
+# import psycopg2
 import serial
-from .config import config
+# from .config import config
 
 ser = serial.Serial('/dev/ttyACM0', 115200)
 
