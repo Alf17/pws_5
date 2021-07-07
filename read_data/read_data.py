@@ -83,4 +83,4 @@ if __name__ == '__main__':
                     print(dane)
                     # write_data(cur, conn, dane)
             except:
-                print('Błąd')
+                print('Blad')
