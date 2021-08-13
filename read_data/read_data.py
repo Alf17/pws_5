@@ -3,7 +3,8 @@ from datetime import datetime
 import serial
 # from .config import config
 
-ser = serial.Serial('/dev/ttyACM1', 115200)
+ser0 = serial.Serial('/dev/ttyACM0', 115200)
+ser1 = serial.Serial('/dev/ttyACM1', 115200)
 
 
 # def connect():
@@ -76,12 +77,25 @@ if __name__ == '__main__':
     # cur, conn = connect()
     print("[ START ]")
     while True:
-        linia = ser.readline().decode('utf-8')
-        if linia != '':
+        linia0 = ser0.readline().decode('utf-8')
+        if linia0 != '':
             try:
-                dane = linia.strip().split('\t')
-                if 'UP' in dane[0]:
-                    print(dane)
-                    # write_data(cur, conn, dane)
+                print(f"Linia: {linia0}")
+            #     dane = linia.strip().split('\t')
+            #     if 'UP' in dane[0]:
+            #         print(dane)
+            #         # write_data(cur, conn, dane)
+
             except:
-                print('Blad')
+                print('Blad port 0')
+        linia1 = ser1.readline().decode('utf-8')
+        if linia1 != '':
+            try:
+                print(f"Linia1: {linia1}")
+            #     dane = linia.strip().split('\t')
+            #     if 'UP' in dane[0]:
+            #         print(dane)
+            #         # write_data(cur, conn, dane)
+
+            except:
+                print('Blad port 1')
