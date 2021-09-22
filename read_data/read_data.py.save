@@ -88,7 +88,7 @@ if __name__ == '__main__':
 
             except:
                 print('Blad port 0')
-        linia1 = ser2.readline().decode('utf-8')
+        linia1 = ser1.readline().decode('utf-8')
         if linia1 != '':
             try:
                 print(f"Linia1: {linia1}")

@@ -1,0 +1,7 @@
+https://github.com/pyusb/pyusb/blob/master/docs/tutorial.rst
+
+https://www.berlios.de/software/pyusb/
+
+https://www.reddit.com/r/Python/comments/dbtwaz/reset_usb_device_using_python_script_without_sudo/
+
+https://gist.github.com/18516329677/5e143eb8ecf80d21b2fcb36baec0c9f4
